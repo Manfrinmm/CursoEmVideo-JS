@@ -150,3 +150,13 @@ métodos de acesso:
 - `mouseup` -> mouse é "des-pressionado" dentro da area
 - `click` -> area é clicada pelo mouse
 - `mouseout` -> mouse sai da area
+
+## Array Vídeo#15
+
+- `n.push(x)` Adiciona `x` ao Array `n`.
+- `n.length` Retorna o tamanho do Array `n`.
+- `n.sort()` Ordena os dados dentro do Array `n`.
+- `n.indexOf(x)` Retorna a posição do item(`x`) no Array `n`. Caso tenha, ele retorna a posição, se não retorna -1.
+
+- `for(let index in n){}` Percorre cada posição(`index`) do Array `n`.
+- `for(let item of n){}` Percorre cada elemento(`item`) do Array `n`.

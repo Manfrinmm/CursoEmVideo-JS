@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="estilo.css" />
+
+    <title>Nome do exercício</title>
+  </head>
+  <body>
+    <header>
+      <h1>Titulo do exercício</h1>
+    </header>
+    <main>
+      <section>
+        <div>
+          <div id="inputWrapper">
+            <label for="start">Início</label>
+            <input type="number" id="start" />
+          </div>
+
+          <div id="inputWrapper">
+            <label for="end">Fim</label>
+            <input type="number" id="end" />
+          </div>
+
+          <div id="inputWrapper">
+            <label for="steps">Passo</label>
+            <input type="number" id="steps" min="1" />
+          </div>
+          <button type="button" onclick="handleCounter()">Contar</button>
+        </div>
+        <p>Preparando a contagem...</p>
+      </section>
+      <footer>@MatheusMM</footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
