@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="estilo.css" />
+
+    <title>Verificador de idade</title>
+  </head>
+  <body>
+    <header>
+      <h1>Verificador de idade</h1>
+    </header>
+    <main>
+      <section>
+        <div class="content">
+          <label for="year">Ano de nascimento</label>
+          <input
+            type="number"
+            id="year"
+            min="0"
+            placeholder="Digite o ano de nascimento"
+          />
+        </div>
+        <div class="content">
+          <span>Sexo:</span>
+          <input type="radio" id="masculine" name="gen" />
+          <label for="masculine">Masculino</label>
+          <input type="radio" id="female" name="gen" />
+          <label for="female">Feminino</label>
+        </div>
+        <button type="button" onclick="handleCheck()">Verificar</button>
+        <div class="result">Preencha os dados acima para ver o resultado!</div>
+      </section>
+      <footer>@MatheusMM</footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

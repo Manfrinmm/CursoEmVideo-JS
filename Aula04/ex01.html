@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EX01</title>
+    <style>
+      html {
+        cursor: cell;
+      }
+      body {
+        background-color: antiquewhite;
+      }
+      button {
+        cursor: progress;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FALAAAAA GALERAAAA!</h1>
+    <p>Bora brincar?</p>
+    <button onclick="handleClick()">Dúvido você clicar</button>
+
+    <script>
+      function handleClick() {
+        alert("Clicouuu");
+        const userConfirm = confirm("Quer saber mesmo o que tem aqui?");
+        if (userConfirm) {
+          document.querySelector("body").innerHTML = `<h1 style="
+              color:red;
+            ">NÃO TEM NADA KAKAKAKAKA </h1>`;
+        } else {
+          document.querySelector("button").innerHTML =
+            "Tem certeza que não quer saber?";
+        }
+      }
+    </script>
+  </body>
+</html>

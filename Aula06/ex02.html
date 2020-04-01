@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <style>
+      h1,
+      h2 {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Seu nome é:
+    </h1>
+    <h2></h2>
+    <script>
+      var name = prompt("Nome:");
+      alert(`Nome é: ${name}`);
+
+      document.querySelector("h2").innerHTML = name;
+    </script>
+  </body>
+</html>
