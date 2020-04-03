@@ -160,3 +160,7 @@ métodos de acesso:
 
 - `for(let index in n){}` Percorre cada posição(`index`) do Array `n`.
 - `for(let item of n){}` Percorre cada elemento(`item`) do Array `n`.
+
+## O que continuar a estudar Vídeo#17
+
+- RegEx
