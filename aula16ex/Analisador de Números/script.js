@@ -8,18 +8,15 @@ var smaller = null;
 var bigger = null;
 
 function calculateSumAndAverage() {
-  var sum = 0;
+  var sum = numbers.reduce((accumulator, item) => accumulator + item, 0);
 
-  for (number of numbers) {
-    sum += number;
-  }
   const average = sum / numbers.length;
 
   return [sum, average];
 }
 
 function NumberAlreadyAdd(number) {
-  const numberFound = numbers.find(item => item == number);
+  const numberFound = numbers.find((item) => item == number);
 
   if (numberFound) {
     return true;
@@ -76,7 +73,9 @@ function generateResult() {
   <p>O maior valor informado foi ${bigger}.</p>
   <p>O menor valor informado foi ${smaller}.</p>
   <p>Somando todos os valores, temos ${sum}.</p>
-  <p>A média dos valores digitados é ${average.toFixed(2)}.</p>
+  <p>A média dos valores digitados é ${average
+    .toFixed(2)
+    .replace(".", ",")}.</p>
   `;
 
   response.innerHTML = message;
